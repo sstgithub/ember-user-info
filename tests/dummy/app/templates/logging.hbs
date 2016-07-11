@@ -1,0 +1,19 @@
+<p>
+  <form {{action "html5GeoRequest" on="submit"}}>
+    {{input type="text" value=apiKey}}
+    <button type="submit">Get Geo From User</button>
+  </form>
+</p>
+
+<p>
+  <button {{action "ip"}}>Get Ip</button>
+</p>
+
+<p>
+  <button {{action "geoFromIp"}}>Get Geo</button>
+</p>
+
+<p><strong>Geo is from:</strong> {{user.geoFrom}}</p>
+<p><strong>Geo is:</strong> {{parsedGeo}}</p>
+
+<p><strong>IP is:</strong> {{user.ip}}</p>
